@@ -7,7 +7,7 @@
     "typings": "./dist/index",
     "scripts": {
         "test": "karma start",
-        "prepublish": "tsc",
+        "preinstall": "tsc",
         "build": "tsc"
     },
     "author": "",
