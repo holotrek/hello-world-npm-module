@@ -1,0 +1,23 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "A test Hello World NPM module",
+    "main": "./dist/index.ts",
+    "types": "./dist/index.d.ts",
+    "typings": "./dist/index",
+    "scripts": {
+        "test": "test",
+        "build": "tsc"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jasmine": "^2.5.41",
+        "jasmine-core": "^2.5.2",
+        "karma": "^1.5.0",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-simpletsc-preprocessor": "^0.1.0",
+        "typescript": "^2.2.2"
+    }
+}
