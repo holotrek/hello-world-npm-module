@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "description": "A test Hello World TypeScript NPM module",
     "main": "./dist/index.ts",
-    "types": "./dist/index.d.ts",
-    "typings": "./dist/index",
+    "typings": "./dist/index.d.ts",
     "scripts": {
         "test": "karma start",
         "preinstall": "tsc",
