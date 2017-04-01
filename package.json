@@ -6,7 +6,8 @@
     "types": "./dist/index.d.ts",
     "typings": "./dist/index",
     "scripts": {
-        "test": "test",
+        "test": "karma start",
+        "prepublish": "tsc",
         "build": "tsc"
     },
     "author": "",
