@@ -1,5 +1,5 @@
 {
-    "name": "hello-world",
+    "name": "hello-world-npm-module",
     "version": "1.0.0",
     "description": "A test Hello World TypeScript NPM module",
     "main": "./dist/index.ts",
