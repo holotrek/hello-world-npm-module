@@ -7,7 +7,7 @@ This is just an example of a TypeScript NPM Module, which compiles to the dist d
 ## Install
 
 ```
-git clone TBD
+git clone https://github.com/holotrek/hello-world-npm-module
 npm install
 ```
 
