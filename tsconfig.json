@@ -1,16 +1,14 @@
 {
     "version": "1.0.0",
     "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
         "outDir": "dist/",
-        "baseUrl": "src",
+        "target": "es5",
         "sourceMap": true,
         "declaration": true,
-        "moduleResolution": "node",
-        "target": "es5"
+        "moduleResolution": "node"
     },
-    "files": [
-        "./src/index.ts"
-    ],
     "exclude": [
         "node_modules",
         "**/*.spec.ts"

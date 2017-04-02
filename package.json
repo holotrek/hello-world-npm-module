@@ -1,23 +1,30 @@
 {
-    "name": "hello-world-npm-module",
-    "version": "1.0.0",
-    "description": "A test Hello World TypeScript NPM module",
-    "main": "./dist/index.js",
-    "typings": "./dist/index.d.ts",
-    "scripts": {
-        "test": "karma start",
-        "preinstall": "tsc",
-        "build": "tsc"
-    },
-    "author": "",
-    "license": "MIT",
-    "devDependencies": {
-        "@types/jasmine": "^2.5.41",
-        "jasmine-core": "^2.5.2",
-        "karma": "^1.5.0",
-        "karma-chrome-launcher": "^2.0.0",
-        "karma-jasmine": "^1.1.0",
-        "karma-simpletsc-preprocessor": "^0.1.0",
-        "typescript": "^2.2.2"
-    }
+  "name": "hello-world-npm-module",
+  "version": "1.0.0",
+  "description": "A test Hello World TypeScript NPM module",
+  "main": "./dist/hello-world.service.ts",
+  "typings": "./dist/hello-world.service.d.ts",
+  "scripts": {
+    "test": "karma start",
+    "preinstall": "tsc",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holotrek/hello-world-npm-module.git"
+  },
+  "author": "Evan Kaiser",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.41",
+    "jasmine-core": "^2.5.2",
+    "jasmine-spec-reporter": "^3.2.0",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-remap-istanbul": "^0.6.0",
+    "karma-typescript": "^3.0.0-beta.2",
+    "typescript": "^2.2.2"
+  }
 }
