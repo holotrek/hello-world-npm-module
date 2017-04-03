@@ -36,5 +36,7 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-# Dist folder
+# Build/Test folders
+bundle
+coverage
 dist
