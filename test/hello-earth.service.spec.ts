@@ -1,4 +1,4 @@
-import { HelloEarthService } from './hello-earth.service';
+import { HelloEarthService } from '../src/hello-earth.service';
 
 describe('hello-earth', () => {
     it('should say hi', () => {

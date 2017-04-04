@@ -2,19 +2,15 @@
     "version": "1.0.0",
     "compilerOptions": {
         "module": "commonjs",
-        "noImplicitAny": true,
         "target": "es5",
+        "skipLibCheck": true,
+        "noImplicitAny": true,
         "outDir": "./dist",
-        "sourceMap": true,
+        "sourceMap": false,
         "declaration": true,
         "moduleResolution": "node"
     },
     "files": [
         "bundle/hello_world.ts"
-    ],
-    "bundles": {
-        "hello_world": {
-            "files": ["src/**/*.service.ts"]
-        }
-    }
+    ]
 }

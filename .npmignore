@@ -6,3 +6,4 @@ bundle_config.json
 gulpfile.js
 karma.conf.js
 tsconfig.json
+npm-debug.log

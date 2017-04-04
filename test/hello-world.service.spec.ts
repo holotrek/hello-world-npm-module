@@ -1,4 +1,4 @@
-import { HelloWorldService } from './hello-world.service';
+import { HelloWorldService } from '../src/hello-world.service';
 
 describe('hello-world', () => {
     it('should say hi', () => {

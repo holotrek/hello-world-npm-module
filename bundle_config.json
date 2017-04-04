@@ -1,13 +1,21 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "noImplicitAny": true,
         "target": "es5",
+        "skipLibCheck": true,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "sourceMap": false,
+        "declaration": true,
         "moduleResolution": "node"
     },
+    "exclude": [
+        "node_modules",
+        "test"
+    ],
     "bundles": {
         "hello_world": {
-            "files": ["src/**/*.service.ts"]
+            "files": ["src/**/*.ts"]
         }
     }
 }
