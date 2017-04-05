@@ -19,12 +19,14 @@ gulp.task('build', ['clean'], function() {
 });
 
 gulp.task('definitions', ['build'], function() {
-    return dts.bundle({
+    dts.bundle({
         name: 'hello-world-npm-module',
         baseDir: 'dist',
         main: 'dist/index.d.ts',
         out: '../hello-world.d.ts'
     });
+    return gulp.src(['dist/**/*.d.ts'], { read: false })
+        .pipe(clean());
 });
 
 gulp.task('default', ['definitions']);
