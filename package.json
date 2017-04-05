@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A test Hello World TypeScript NPM module",
     "main": "./dist/index.js",
-    "typings": "./hello_world.d.ts",
+    "typings": "./hello-world.d.ts",
     "scripts": {
         "test": "karma start",
         "prepublish": "gulp",
