@@ -1,5 +1,4 @@
 # .npmignore
-/bundle
 /coverage
 /src
 bundle_config.json

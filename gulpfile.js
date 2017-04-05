@@ -13,14 +13,14 @@ gulp.task('build', ['clean'], function() {
     var tsProject = ts.createProject('tsconfig.json');
     var tsResult = gulp.src('src/**/*.ts').pipe(tsProject());
     return merge([
-        tsResult.dts.pipe(gulp.dest('dist')),
-        tsResult.js.pipe(gulp.dest('dist'))
+        tsResult.dts.pipe(gulp.dest('./dist')),
+        tsResult.js.pipe(gulp.dest('./dist'))
     ]);
 });
 
 gulp.task('definitions', ['build'], function() {
     return dts.bundle({
-        name: 'hello_world',
+        name: '../hello_world',
         main: 'dist/index.d.ts'
     });
 });
