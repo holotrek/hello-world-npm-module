@@ -23,10 +23,10 @@ gulp.task('definitions', ['build'], function() {
         name: 'hello-world-npm-module',
         baseDir: 'dist',
         main: 'dist/index.d.ts',
-        out: '../hello-world.d.ts'
+        out: '../hello-world.d.ts',
+        removeSource: true,
+        outputAsModuleFolder: true,
     });
-    return gulp.src(['dist/**/*.d.ts'], { read: false })
-        .pipe(clean());
 });
 
 gulp.task('default', ['definitions']);
