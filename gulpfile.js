@@ -1,11 +1,10 @@
 var gulp = require('gulp');
-var dts = require('dts-bundle');
 var ts = require('gulp-typescript');
 var merge = require('merge2');
 var clean = require('gulp-clean');
 
 gulp.task('clean', function() {
-    return gulp.src(['bundle', 'dist', 'hello-world.d.ts'], { read: false })
+    return gulp.src(['dist'], { read: false })
         .pipe(clean());
 });
 
@@ -18,15 +17,4 @@ gulp.task('build', ['clean'], function() {
     ]);
 });
 
-gulp.task('definitions', ['build'], function() {
-    dts.bundle({
-        name: 'hello-world-npm-module',
-        baseDir: 'dist',
-        main: 'dist/index.d.ts',
-        out: '../hello-world.d.ts'
-    });
-    return gulp.src(['dist/**/*.d.ts'], { read: false })
-        .pipe(clean());
-});
-
-gulp.task('default', ['definitions']);
+gulp.task('default', ['build']);

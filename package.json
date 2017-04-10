@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A test Hello World TypeScript NPM module",
     "main": "./dist/index.js",
-    "typings": "./hello-world.d.ts",
+    "typings": "./dist/index.d.ts",
     "scripts": {
         "test": "karma start",
         "prepublish": "gulp",
@@ -17,7 +17,6 @@
     "license": "MIT",
     "devDependencies": {
         "@types/jasmine": "^2.5.41",
-        "dts-bundle": "^0.7.2",
         "gulp": "^3.9.1",
         "gulp-clean": "^0.3.2",
         "gulp-typescript": "^3.1.6",
