@@ -21,8 +21,7 @@ karma start
 ## Build
 
 ```
-npm install -g typescript
-npm run-script build
+gulp
 ```
 
 ## Clean
