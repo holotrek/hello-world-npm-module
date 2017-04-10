@@ -17,19 +17,4 @@ gulp.task('build', ['clean'], function() {
     ]);
 });
 
-<<<<<<< HEAD
 gulp.task('default', ['build']);
-=======
-gulp.task('definitions', ['build'], function() {
-    dts.bundle({
-        name: 'hello-world-npm-module',
-        baseDir: 'dist',
-        main: 'dist/index.d.ts',
-        out: '../hello-world.d.ts',
-        removeSource: true,
-        outputAsModuleFolder: true,
-    });
-});
-
-gulp.task('default', ['definitions']);
->>>>>>> 897f24855324133c5ecea3e01d7d3f2c445e239d
